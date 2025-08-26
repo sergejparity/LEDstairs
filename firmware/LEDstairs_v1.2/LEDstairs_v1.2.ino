@@ -31,7 +31,7 @@ struct Step {
 // #define STRIP_LED_AMOUNT 229 // 14 STEPS
 // #define STRIP_LED_AMOUNT 244 // 15 STEPS
 // #define STRIP_LED_AMOUNT 261 // 10 STEPS
-#define STRIP_LED_AMOUNT 278 // 10 STEPS
+#define STRIP_LED_AMOUNT 301 // 10 STEPS
 // #define STRIP_LED_AMOUNT 270  // количество чипов WS2811/WS2812 на всех ступеньках. Для WS2811 кол-во чипов = кол-во светодиодов / 3
 #define STEP_AMOUNT 17       // количество ступенек
 
@@ -44,14 +44,14 @@ Step steps[STEP_AMOUNT] = {
 { 17, 0b00000000 },   // 5
 { 17, 0b00000000 },   // 6
 { 17, 0b00000000 },   // 7
-{ 18, 0b00000000 },   // 8
-{ 16, 0b00000000 },   // 9
+{ 20, 0b00000000 },   // 8
+{ 20, 0b00000000 },   // 9
 { 17, 0b00000000 },   // 10
 { 20, 0b00000000 },   // 11
-{ 8, 0b00000000 },   // 12
-{ 15, 0b00000000 },   // 13
-{ 16, 0b00000000 },   // 14
-{ 15, 0b00000000 },   // 15
+{ 20, 0b00000000 },   // 12
+{ 17, 0b00000000 },   // 13
+{ 17, 0b00000000 },   // 14
+{ 17, 0b00000000 },   // 15
 { 17, 0b01001001 },    // 16
 { 17, 0b01001001 }    // 17
 };
@@ -76,7 +76,7 @@ Step steps[STEP_AMOUNT] = {
 // };
 
 #define AUTO_BRIGHT 0     // автояркость вкл(1)/выкл(0) (с фоторезистором)
-#define CUSTOM_BRIGHT 20  // ручная яркость
+#define CUSTOM_BRIGHT 4  // ручная яркость
 
 #define FADR_SPEED 400         // скорость переключения с одной ступеньки на другую, меньше - быстрее
 #define START_EFFECT COLOR   // режим при старте COLOR, RAINBOW, FIRE
@@ -101,7 +101,7 @@ Step steps[STEP_AMOUNT] = {
 #define PHOTO_PIN A0     // пин фоторезистора
 #define BUTTON_PIN 6     // пин сенсорной кнопки переключения эффектов
 
-#define ORDER_GRB       // порядок цветов ORDER_GRB / ORDER_RGB / ORDER_BRG
+#define ORDER_GRB   // порядок цветов ORDER_GRB / ORDER_RGB / ORDER_BRG
 #define COLOR_DEBTH 2   // цветовая глубина: 1, 2, 3 (в байтах)
 
 // для разработчиков

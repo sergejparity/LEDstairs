@@ -72,7 +72,7 @@ void stepFader(bool dir, bool state) {
 // ============== ЭФФЕКТЫ =============
 // ========= огонь
 // настройки пламени
-#define HUE_GAP 45      // заброс по hue
+#define HUE_GAP 63      // заброс по hue
 #define FIRE_STEP 90    // шаг изменения "языков" пламени
 #define HUE_START 2     // начальный цвет огня (0 красный, 80 зелёный, 140 молния, 190 розовый)
 #define MIN_BRIGHT 150  // мин. яркость огня
