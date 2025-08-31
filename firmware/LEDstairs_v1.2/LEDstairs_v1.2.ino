@@ -31,9 +31,9 @@ struct Step {
 // #define STRIP_LED_AMOUNT 229 // 14 STEPS
 // #define STRIP_LED_AMOUNT 244 // 15 STEPS
 // #define STRIP_LED_AMOUNT 261 // 10 STEPS
-#define STRIP_LED_AMOUNT 301 // 10 STEPS
+#define STRIP_LED_AMOUNT 318 // 10 STEPS
 // #define STRIP_LED_AMOUNT 270  // количество чипов WS2811/WS2812 на всех ступеньках. Для WS2811 кол-во чипов = кол-во светодиодов / 3
-#define STEP_AMOUNT 17       // количество ступенек
+#define STEP_AMOUNT 18       // количество ступенек
 
 // описание всех ступенек с возможностью подсветки ЛЮБЫХ ступенек в ночном режиме
 Step steps[STEP_AMOUNT] = { 
@@ -52,8 +52,9 @@ Step steps[STEP_AMOUNT] = {
 { 17, 0b00000000 },   // 13
 { 17, 0b00000000 },   // 14
 { 17, 0b00000000 },   // 15
-{ 17, 0b01001001 },    // 16
-{ 17, 0b01001001 }    // 17
+{ 17, 0b01001001 },   // 16
+{ 17, 0b01001001 },   // 17
+{ 17, 0b01001001 }    // 18
 };
 
 // Step steps[STEP_AMOUNT] = { 
@@ -76,7 +77,7 @@ Step steps[STEP_AMOUNT] = {
 // };
 
 #define AUTO_BRIGHT 0     // автояркость вкл(1)/выкл(0) (с фоторезистором)
-#define CUSTOM_BRIGHT 4  // ручная яркость
+#define CUSTOM_BRIGHT 15  // ручная яркость
 
 #define FADR_SPEED 400         // скорость переключения с одной ступеньки на другую, меньше - быстрее
 #define START_EFFECT COLOR   // режим при старте COLOR, RAINBOW, FIRE
