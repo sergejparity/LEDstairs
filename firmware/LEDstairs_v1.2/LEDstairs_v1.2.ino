@@ -77,10 +77,10 @@ Step steps[STEP_AMOUNT] = {
 // };
 
 #define AUTO_BRIGHT 0     // автояркость вкл(1)/выкл(0) (с фоторезистором)
-#define CUSTOM_BRIGHT 15  // ручная яркость
+#define CUSTOM_BRIGHT 25  // ручная яркость
 
 #define FADR_SPEED 400         // скорость переключения с одной ступеньки на другую, меньше - быстрее
-#define START_EFFECT COLOR   // режим при старте COLOR, RAINBOW, FIRE
+#define START_EFFECT FIRE   // режим при старте COLOR, RAINBOW, FIRE
 #define ROTATE_EFFECTS 1      // вкл(1)/выкл(0) - автосмена эффектов
 #define TIMEOUT 15            // секунд, таймаут выключения ступенек после срабатывания одного из датчиков движения
 
